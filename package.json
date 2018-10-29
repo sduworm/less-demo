@@ -1,6 +1,7 @@
 {
   "name": "less-demo",
   "version": "1.0.0",
+  "description": "极简webpack工程。且compile是最传统的html+css方式",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.config.js",
     "build": "webpack --config webpack.config.js",
