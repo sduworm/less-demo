@@ -1,3 +1,17 @@
+// 左右布局
+aside {
+  width: 224px;
+  background: #3e3e3e;
+  position: absolute;
+  height: 100vh;
+  color: #999;
+}
+
+// 左右布局
+#main-content {
+  margin-left: 224px;
+}
+
 .logo-area {
   text-align: center;
   height: 40px;
@@ -13,18 +27,35 @@
   span {
     font-size: 16px;
     display: inline-block;
-    text-indent: 12px;
+    text-indent: 12px; // 首行缩进
   }
 }
 
-aside {
-  width: 224px;
-  background: #3e3e3e;
-  position: absolute;
-  height: 100vh;
-  color: #999;
-}
-
-#main-content {
-  margin-left: 224px;
+.menu {
+  .list-group {
+    .menu-item-1 {
+      background-color: rgb(73, 73, 73);
+      box-sizing: border-box;
+      color: rgb(24, 144, 255);
+      line-height: 45px;
+      padding-left: 30px;
+    }
+    .menu-item-2 {
+      color: #ffffff;
+    }
+    .menu-item-2, .menu-item-6, .menu-item-7 {
+      line-height: 45px;
+      margin-top: 4px;
+      padding-left: 30px;
+    }
+    .menu-item-3, .menu-item-4, .menu-item-5 {
+      // 基于bootstrap的list-group-item
+      background-color: #000000;
+      line-height: 50px;
+      padding-bottom: 0;
+      padding-left: 48px;
+      padding-top: 0;
+      border: 0;
+    }
+  }
 }
