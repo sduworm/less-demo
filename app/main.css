@@ -1,3 +1,55 @@
-body {
-  background: yellow;
+aside {
+  width: 224px;
+  background: #3e3e3e;
+  position: absolute;
+  height: 100vh;
+  color: #999;
+}
+#main-content {
+  margin-left: 224px;
+}
+.logo-area {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin: 28px 0;
+  position: relative;
+}
+.logo-area img {
+  width: 60px;
+  position: absolute;
+  top: 5px;
+  left: 24px;
+}
+.logo-area span {
+  font-size: 16px;
+  display: inline-block;
+  text-indent: 12px;
+}
+.menu .list-group .menu-item-1 {
+  background-color: #494949;
+  box-sizing: border-box;
+  color: #1890ff;
+  line-height: 45px;
+  padding-left: 30px;
+}
+.menu .list-group .menu-item-2 {
+  color: #ffffff;
+}
+.menu .list-group .menu-item-2,
+.menu .list-group .menu-item-6,
+.menu .list-group .menu-item-7 {
+  line-height: 45px;
+  margin-top: 4px;
+  padding-left: 30px;
+}
+.menu .list-group .menu-item-3,
+.menu .list-group .menu-item-4,
+.menu .list-group .menu-item-5 {
+  background-color: #000000;
+  line-height: 50px;
+  padding-bottom: 0;
+  padding-left: 48px;
+  padding-top: 0;
+  border: 0;
 }
