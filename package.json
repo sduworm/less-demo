@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.config.js",
     "build": "webpack --config webpack.config.js",
-    "compile": "lessc src/main.less app/main.css && copy index.html app\\"
+    "compile": "lessc src/main.less docs/main.css && copy index.html docs\\"
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
