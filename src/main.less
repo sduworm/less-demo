@@ -2,7 +2,7 @@
 aside {
   width: 224px;
   background: #3e3e3e;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   color: #999;
 }
@@ -155,6 +155,10 @@ aside {
   table {
     height: 440px;
     width: 100%;
+    .ant-table-selection-column {
+      text-align: center;
+      width: 62px;
+    }
     thead th {
       background-color: rgb(250, 250, 250);
       border-collapse: separate;
@@ -165,37 +169,122 @@ aside {
       color: rgb(102, 102, 102);
       padding: 6px 12px;
     }
-    tbody tr {
-      border-bottom-color: rgba(0, 0, 0, 0.65);
-      border-collapse: separate;
-      border-left-color: rgb(232, 232, 232);
-      border-right-color: rgba(0, 0, 0, 0.65);
-      border-top-color: rgb(232, 232, 232);
-      box-sizing: border-box;
-      color: rgba(0, 0, 0, 0.65);
-      display: table-row;
-      font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      font-variant-caps: normal;
-      font-variant-east-asian: normal;
-      font-variant-ligatures: normal;
-      font-variant-numeric: tabular-nums;
-      height: 40px;
-      line-height: 21px;
-      list-style-image: none;
-      list-style-position: outside;
-      list-style-type: none;
+    tbody tr td {
       text-align: left;
-      text-size-adjust: 100%;
-      transition-delay: 0s;
-      transition-duration: 0.3s;
-      transition-property: all;
-      transition-timing-function: ease;
-      vertical-align: middle;
-      width: 892px;
-      -webkit-border-horizontal-spacing: 0px;
-      -webkit-border-vertical-spacing: 0px;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      border-right: 1px solid rgb(232, 232, 232);
+      border-bottom: 1px solid rgb(232, 232, 232);
+      color: rgb(102, 102, 102);
+      font-size: 12px;
+      height: 40px;
+      line-height: 18px;
+      list-style: none outside none;
+      min-height: 40px;
+      min-width: 62px;
+      padding: 6px 12px;
+      button {
+        padding: 0;
+        border: 0;
+      }
+      .ant-badge-status-dot {
+        background-color: rgb(82, 196, 26);
+        border-collapse: separate;
+        border-radius: 50%;
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+      }
+      .ant-badge-status-text {
+        color: rgb(135, 208, 104);
+        margin-left: 8px;
+      }
     }
   }
+  .pagination-area {
+    height: 32px;
+    margin-bottom: 32px;
+  }
+  .pagination {
+    color: rgba(0, 0, 0, 0.65);
+    float: right;
+    height: 32px;
+    line-height: 24px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin: 16px 0;
+    padding-inline-start: 0px;
+    padding: 0 0 0;
+    li {
+      display: inline-block;
+      height: 32px;
+      line-height: 32px;
+      margin-right: 8px;
+      a {
+        color: rgba(0, 0, 0, .65);
+        border-radius: 4px;
+        border: 1px solid rgb(217, 217, 217);
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        min-width: 32px;
+        padding: 0 6px;
+      }
+    }
+    .ant-pagination-disabled i {
+      color: rgba(0, 0, 0, .25);
+    }
+    .ant-pagination-item-active a {
+      border-color: #1890ff;
+      color: #1890ff;
+    }
+    .ant-pagination-jump-next a {
+      border: 0;
+      color: rgba(0, 0, 0, .25);
+    }
+    .ant-pagination-options {
+      height: 32px;
+    }
+    .ant-pagination-options-size-changer {
+      border-radius: 4px;
+      border: 1px solid rgb(217, 217, 217);
+      height: 32px;
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      margin-right: 8px;
+      span {
+        color: rgba(0, 0, 0, 0.25);
+        line-height: 16px;
+        margin-top: -8px;
+        position: absolute;
+        right: 11px;
+        top: 15px;
+      }
+      .ant-select-selection-selected-value {
+        margin-left: 10px;
+      }
+    }
+    .ant-pagination-options-quick-jumper {
+      display: inline-block;
+      width: 120px;
+      input {
+        border-radius: 4px;
+        border: 1px solid rgb(217, 217, 217);
+        box-sizing: border-box;
+        height: 32px;
+        margin: 0 8px;
+        padding: 4px 11px;
+        width: 50px;
+      }
+    }
+  }
+}
+
+.footer {
+  color: rgb(153, 153, 153);
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
 }
